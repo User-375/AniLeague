@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Anime League</title>
+  <style>
+  body {
+    background: linear-gradient(to right, #ffe4ec, #e0f7fa);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    color: #d500f9;
+    text-shadow: 1px 1px 2px #aaa;
+  }
+
+  p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #6a1b9a;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ce93d8;
+    border-radius: 8px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  input[type="submit"] {
+    background-color: #ab47bc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #8e24aa;
+  }
+
+  footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  a {
+    color: #1e88e5;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+</head>
+<body>  
+<h1> Anime league</h1>
+<p>
+  Welcome to the <strong>Anime League</strong> — the ultimate online sanctuary for every anime enthusiast out there! Whether you’re a die-hard fan of shonen battles, a lover of heartwarming slice-of-life, or someone who gets lost in deep sci-fi stories, this is the place for you. Join a thriving community of fellow otakus, showcase your love for your favorite characters, discover hidden gems, and participate in epic online events. Fill out the form below and take your first step into a world where anime isn't just entertainment — it's a way of life!
+</p>
+<hr>
+<h2> joining form for Anime League</h2>
+<form action="/submit" method="post">
+  <label for="name"> Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name..." required>
+  <br>
+  <label for="email"> Email Address:</label>
+  <input type="email" id=email name="email" placeholder="ABC@gmail.com" required>
+  <br>
+  <label for="favanime"> Favourite Anime:</label>
+  <input type="text" id="favanime" name="favanime" placeholder="Bleach">
+  <br>
+  <label for="dob">Date of birth:</label>
+  <input type="date" id="dob" name="date of birth" placeholder="01/01/2000" required>
+  <br>
+  <label for="prof"> Profession:</label>
+  <select id="prof" name="prof">
+    <option value="select one" disabled  selected>select one</option>
+    <option value="student">student</option>
+    <option value="part_timer">part time otaku</option>
+    <option value="whale otaku">whale otaku</option>
+  </select>
+  <br>
+  <label for="count"> Anime count</label>
+  <input type="number" id="count" name="count" placeholder="how many anime have you watched?">
+  <br>
+  <fieldset>
+  <legend> Select Your Favourite Genre</legend>
+  
+  <label>
+    <input type="checkbox" name="favgenre" value="shonen" >shonen
+  </label>
+  
+  <label>
+    <input type="checkbox" name="favgenre"
+      value="isekai"> Isekai
+  </label>
+  
+  <label>
+    <input type="checkbox" name="favgenre"
+      value="comedy"> comedy
+  </label>
+  
+  <label>
+    <input type="checkbox" name="favgenre"
+    value="seinen"> seinen
+  </label>
+  
+  </fieldset>
+  
+  <br>
+  <fieldset>
+    <legend>Choose your <b><i>Subscription</i></b></legend>
+    
+    <label for="Free"> Free</label>
+  <input type="radio" id="Free" name="Subscription" value="Free">
+  
+  <label for="Premium"> Premium</label>
+  <input type="radio" id="Premium" name="Subscription" value="Premium">
+  
+  </fieldset>
+  
+  
+  
+  <input type="submit" value="Join">
+  <br>
+  
+  <footer>
+  <p>&copy; 2025 AnimeVerse. All rights reserved.</p>
+  <p>Created by Future Web Ninja | <a href="#top">Back to Top</a></p>
+</footer>
+</form>
+</body>
+</html>
+
